@@ -34,14 +34,14 @@
       [
         "@pika/plugin-simple-bin",
         {
-          "bin": "sp",
+          "bin": "sp-2.6",
           "minNodeVersion": 10
         }
       ],
       [
         "@pika/plugin-simple-bin",
         {
-          "bin": "snowpack",
+          "bin": "snowpack-2.6",
           "minNodeVersion": 10
         }
       ]

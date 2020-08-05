@@ -63,6 +63,8 @@ export function createImportResolver({
     if (URL_HAS_PROTOCOL_REGEX.test(spec)) {
       return spec;
     }
+    // TODO: temporary support for @/ alias
+    spec = spec.replace('@/', 'src/')
     let mountScript = findMatchingMountScript(config.scripts, spec);
     if (mountScript) {
       let {fromDisk, toUrl} = mountScript.args;
