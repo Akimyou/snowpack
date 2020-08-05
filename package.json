@@ -1,5 +1,5 @@
 {
-  "name": "snowpack",
+  "name": "snowpack-2.6",
   "version": "2.6.4",
   "description": "Run npm packages directly in the browser. No Webpack, Parcel, or bundlers required.",
   "author": "Fred K. Schott <fkschott@gmail.com>",
