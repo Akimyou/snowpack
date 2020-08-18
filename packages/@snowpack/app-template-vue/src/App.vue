@@ -1,60 +1,33 @@
 <template>
-  <div class="App">
-    <header class="App-header">
-      <img src="/logo.svg" class="App-logo" alt="logo" />
-      <p>
-        Edit
-        <code>src/App.vue</code> and save to reload.
-      </p>
-      <a
-        class="App-link"
-        href="https://vuejs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >{{ message }}</a>
-    </header>
+  <div class="app">
+    <p>App</p>
+    <p>{{ foo }}</p>
+    <SubComponent></SubComponent>
   </div>
 </template>
 
 <script>
+import SubComponent from './test-hmr/SubComponent.vue';
+import foo from './test-hmr/foo';
+
 export default {
+  components: {
+    SubComponent,
+  },
   data() {
     return {
-      message: "Learn Vue"
+      foo,
     };
-  }
+  },
 };
 </script>
 
 <style>
-.App {
-  text-align: center;
-}
-.App-header {
-  background-color: #f9f6f6;
-  color: #32485f;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-.App-link {
-  color: #00c185;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  margin-bottom: 1rem;
-  animation: App-logo-spin infinite 1.6s ease-in-out alternate;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.06);
-  }
+.app {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: #999;
 }
 </style>
