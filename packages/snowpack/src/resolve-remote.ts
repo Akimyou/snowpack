@@ -3,8 +3,8 @@ import * as colors from 'kleur/colors';
 import PQueue from 'p-queue';
 import validatePackageName from 'validate-npm-package-name';
 import {SnowpackConfig, ImportMap} from './types/snowpack';
-import {fetchCDNResource, PIKA_CDN, RESOURCE_CACHE} from './util.js';
 import {logger} from './logger';
+import {fetchCDNResource, PIKA_CDN, RESOURCE_CACHE} from './util';
 
 /**
  * Given an install specifier, attempt to resolve it from the CDN.
