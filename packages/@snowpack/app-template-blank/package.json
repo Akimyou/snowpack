@@ -9,8 +9,8 @@
     "access": "public"
   },
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "node ../../snowpack/pkg/dist-node/index.bin.js dev",
+    "build": "node ../../snowpack/pkg/dist-node/index.bin.js build",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"

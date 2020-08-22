@@ -1,11 +1,9 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { hello } from './hello.js';
+import { sayHello } from './sub.js';
 
-import confetti from 'canvas-confetti';
+console.log('index say: ', hello);
+console.log('sub say:', sayHello());
 
-confetti.create(document.getElementById('canvas'), {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+if (import.meta.hot) {
+  import.meta.hot.accept();
+}
