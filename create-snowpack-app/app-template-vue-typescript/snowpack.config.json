@@ -1,0 +1,11 @@
+{
+  "mount": {
+    "public": "/",
+    "src": "/_dist_"
+  },
+  "plugins": [
+    "../../plugins/plugin-vue",
+    "../../plugins/plugin-vue/plugin-tsx-jsx.js",
+    "@snowpack/plugin-dotenv"
+  ]
+}
