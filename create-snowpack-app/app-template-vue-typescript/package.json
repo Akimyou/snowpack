@@ -9,7 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "start": "snowpack dev",
+    "start": "node ../../snowpack/pkg/dist-node/index.bin.js dev",
     "build": "snowpack build",
     "type-check": "tsc",
     "test": "echo \"Vue 3.0 test support is still in progress.\" && exit 1"
