@@ -3,7 +3,7 @@ import path from 'path';
 import {Plugin} from 'rollup';
 import {logger} from '../logger';
 import {InstallTarget} from '../types/snowpack';
-import {getWebDependencyName} from '../util.js';
+import {getWebDependencyName} from '../util';
 
 function autoDetectExports(fileLoc: string): string[] | undefined {
   try {
