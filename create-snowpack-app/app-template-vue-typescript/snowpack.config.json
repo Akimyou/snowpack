@@ -1,4 +1,4 @@
 {
-  "extends": "@snowpack/app-scripts-vue",
-  "plugins": ["@snowpack/plugin-vue/plugin-tsx-jsx.js"]
+  "extends": "../app-scripts-vue/snowpack.config.js",
+  "plugins": ["../../plugins/plugin-vue/plugin-tsx-jsx.js"]
 }

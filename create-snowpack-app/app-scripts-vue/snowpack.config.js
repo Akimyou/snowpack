@@ -3,5 +3,5 @@ module.exports = {
     public: '/',
     src: '/_dist_',
   },
-  plugins: ['@snowpack/plugin-vue', '@snowpack/plugin-dotenv'],
+  plugins: ['../../plugins/plugin-vue', '@snowpack/plugin-dotenv'],
 };
