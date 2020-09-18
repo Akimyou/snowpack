@@ -96,7 +96,7 @@ module.exports = function plugin(snowpackConfig) {
           preprocessLang: descriptor.template.lang,
           compilerOptions: {
             scopeId: descriptor.styles.some((s) => s.scoped) ? `data-v-${id}` : null,
-            runtimeModuleName: '/web_modules/vue.js',
+            runtimeModuleName: 'vue',
           },
         });
         if (js.errors && js.errors.length > 0) {
